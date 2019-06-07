@@ -92,3 +92,32 @@ a {
     border-radius: 50%; }
     .icons a:hover {
       border-style: dashed; }
+
+.text-secondary {
+  font-weight: 500;
+  color: #333; }
+
+.about-info {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-areas: 'bioimage bio bio' 'job1 job1 job1' 'job2 job2 job2' 'job3 job3 job3';
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: #000 3px solid;
+    height: 30vh; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: white;
+    padding: 0.5rem;
+    border-bottom: #000 2px solid; }
