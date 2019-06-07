@@ -1,0 +1,42 @@
+.menu {
+    top: 0;
+
+    .logo-container {
+        position: absolute;
+        z-index: 1;
+        .logo {
+            height: 3.6rem;
+            border-radius: 50%;
+        }
+    }
+
+    .menu-nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $primary-color;
+        display: flex;
+        justify-content: flex-end;
+        border-bottom: 1px solid $border-color; 
+
+        .nav-item {   
+            .nav-link {
+                display: block;
+                color: $link-color;
+                text-align: center;
+                padding: 1.2rem 1.2rem;
+                text-decoration: none;
+                border-radius: 10%;
+            }
+        
+            .nav-link:hover:not(.active) {
+                background-color: $hover-bg-color;
+            }
+        
+            .active {
+                background-color: $active-bg-color;
+            }
+        }
+    }
+}

@@ -1,5 +1,29 @@
-$primary-color: #444;
+@import 'config';
+@import 'menu';
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     background: $primary-color;
+    color: set-text-color($primary-color);
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 0.8rem;
+}
+
+main {
+    position: relative;
+}
+
+footer {
+    position: relative;
+    background: $footer-bg-color;
+    color: $footer-color;
 }
