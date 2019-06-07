@@ -4,9 +4,9 @@
     .logo-container {
         position: absolute;
         z-index: 1;
+        margin: 1px;
         .logo {
             height: 3.6rem;
-            border-radius: 50%;
         }
     }
 
@@ -20,7 +20,8 @@
         justify-content: flex-end;
         border-bottom: 1px solid $border-color; 
 
-        .nav-item {   
+        .nav-item {
+            margin: 1px;   
             .nav-link {
                 display: block;
                 color: $link-color;
